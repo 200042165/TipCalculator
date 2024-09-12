@@ -1,0 +1,55 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipCalculator.MainPage">
+
+
+
+    <StackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+        <!-- Tip Calculator Title -->
+        <Label Text="Tip Calculator" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" />
+
+
+
+        <!-- Bill Amount Section -->
+        <Label Text="Bill Amount:" FontSize="22" HorizontalOptions="Center" />
+        <Entry x:Name="BillAmountEntry" Placeholder="Enter bill amount" Keyboard="Numeric" FontSize="18"
+               HorizontalOptions="Center" WidthRequest="300" />
+
+
+
+        <!-- Service Quality Section -->
+        <Label Text="Service Quality:" FontSize="22" HorizontalOptions="Center" />
+
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="15">
+            <Button Text="Calculate Tip" BackgroundColor="Blue" TextColor="White" Clicked="OnTip15Clicked" />
+            <Label Text="15%" FontSize="22" VerticalOptions="Center" />
+        </StackLayout>
+
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="15">
+            <Button Text="Calculate Tip" BackgroundColor="Blue" TextColor="White" Clicked="OnTip20Clicked" />
+            <Label Text="20%" FontSize="22" VerticalOptions="Center" />
+        </StackLayout>
+
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="15">
+            <Button Text="Calculate Tip" BackgroundColor="Blue" TextColor="White" Clicked="OnTip25Clicked" />
+            <Label Text="25%" FontSize="22" VerticalOptions="Center" />
+        </StackLayout>
+
+
+
+        <!-- Result Section -->
+        <Label x:Name="ResultLabel" Text="" FontSize="22" HorizontalOptions="Center" FontAttributes="Bold" />
+
+
+
+    </StackLayout>
+
+
+
+</ContentPage>
